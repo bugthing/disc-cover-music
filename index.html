@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Disc Cover Music</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="An aid to help you learn to play the guitar">
+    <meta name="keywords" content="disc cover music guitar">
+    <meta name="author" content="Robert Capper">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("guitar.jpg");
+  min-height: 90%;
+}
+
+.spinimg {
+  transition: transform .7s ease-in-out;
+}
+.spinimg:hover {
+  transform: rotate(360deg);
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+footer,header{display:block}
+a{background-color:transparent}a:active,a:hover{outline-width:0}img{border-style:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+
+html,body{font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}
+h1{font-weight:400;margin:10px 0}img{vertical-align:middle}a{color:inherit}
+.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.w3-button:disabled{cursor:not-allowed;opacity:0.3}:disabled *{pointer-events:none}
+.w3-display-container{position:relative}
+.w3-bar{width:100%;overflow:hidden}
+.w3-bar .w3-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.w3-bar .w3-button{white-space:normal}
+.w3-container:after,.w3-container:before,.w3-row:after,.w3-row:before,.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
+.w3-col{float:left;width:100%}.w3-col.s4{width:33.33333%}
+.w3-content{margin-left:auto;margin-right:auto}.w3-content{max-width:980px}
+@media (max-width:600px){
+.w3-hide-small{display:none!important}}
+@media (min-width:993px){.w3-hide-large{display:none!important}}
+@media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
+.w3-top{position:fixed;width:100%;z-index:1}.w3-top{top:0}
+.w3-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.w3-container{padding:0.01em 16px}
+.w3-opacity{opacity:0.60}.w3-hover-opacity-off:hover{opacity:1}.w3-grayscale-min{filter:grayscale(50%)}
+.w3-xlarge{font-size:24px!important}.w3-xxlarge{font-size:36px!important}.w3-jumbo{font-size:64px!important}.w3-center{text-align:center!important}.w3-border{border:1px solid #ccc!important}.w3-padding-large{padding:12px 24px!important}
+.w3-padding-32{padding-top:32px!important;padding-bottom:32px!important}.w3-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.w3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+/* Colors */
+.w3-blue-grey{color:#fff!important;background-color:#607d8b!important}
+.w3-red,.w3-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.w3-white{color:#000!important;background-color:#fff!important}
+.w3-black{color:#fff!important;background-color:#000!important}
+.w3-text-white{color:#fff!important}
+.w3-border-dark-grey{border-color:#616161!important}
+
+    </style>
+  </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#info" class="w3-bar-item w3-button">INFO</a>
+    <a href="#video" class="w3-bar-item w3-button">VIDEO</a>
+    <a href="#smart-button-container" class="w3-bar-item w3-button">BUY!</a>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">
+      Disc Cover Music
+    </span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px">
+      Disc Cover Music
+    </span>
+    <p><a href="#info" class="w3-button w3-xxlarge w3-black">tell me all about it</a></p>
+  <p align="center">
+    <img src="wheel_sml.png" class="spinimg">
+  </p>
+  </div>
+</header>
+
+<!-- Info Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="info">
+  <div class="w3-content">
+
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE INFO</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'whatfor');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">What?</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'background');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Why?</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'shop');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Buy!</div>
+      </a>
+    </div>
+
+    <div id="whatfor" class="w3-container menu w3-padding-32 w3-white">
+      <ul>
+        <li> Learning a musical Instrument? </li>
+        <li> Bogged down in understanding theory? </li>
+        <li> Failure to grasp concepts of scales and keys? </li>
+        <li> Confused by chord construction, triads and intervals? </li>
+      </ul>
+
+      <p>
+        If the answer to any of the above is “Yes” then look no further
+        This new innovative device from Disc-Cover Music will help you in your quest to unlock the secrets to musical theory.
+      </p>
+
+      <ul>
+        <li> Instantly see notes used in major and minor scales in any key </li>
+        <li> Up to 4 note simple chord construction </li>
+        <li> Play chords in any basic key </li>
+        <li> Invent your own chord progressions in any basic key </li>
+        <li> Identify the key of popular songs </li>
+        <li> Assist in improvisation skills </li>
+      </ul>
+    </div>
+
+    <div id="background" class="w3-container menu w3-padding-32 w3-white">
+      <p>
+        Starting your musical journey and learning a new instrument can be a very rewarding experience, however it can also be very frustrating due to the multiple skills that need to be learned. There is also a bewildering world of theory out there and it can be difficult to know where to start.
+        When learning your instrument of choice (electric guitar for me) we are keen to dive in and learn some killer riff or a bunch of chords so we can play along to our favourite songs. However over time there is the realisation that there is a black cloud of theory hanging over us that at some point in the future will need to be mastered!
+        The ability to learn some theory will enhance your musical experience and will certainly help unlock the secrets of your instrument. But where and how do you start? Music theory is a massive subject. It can be confusing knowing where to begin. What is important and what can be left until later?
+        Over Covid lockdown I had some time on my hands so set about learning some theory for myself. I had the idea for a simple wheel device that would assist me in my studies and also be a useful ready reckoner for standing data. The device would also be a launch pad for further study.
+      </p>
+
+      <p>
+        I believe the wheel can help you too!
+      </p>
+
+      <p>
+        Of course any simple device cannot cover every aspect of a huge subject like music theory, however a good grasp of the basics could be all the theory you need to enjoy playing your instrument. If you wished to study further, these basic building blocks would be a useful “launch pad” to further work if  needed.
+      </p>
+
+      <p>
+        A serious student of music may find the device offers you nothing new. For example my nephew is currently on a master degree course in music at University – there is no question that the information on this device would seem pretty rudimentary to him.
+        Conversely my cousin is just starting to learn guitar for the very first time – he may find some of the concepts a wee bit too complicated at this stage when he is only just learning how to get the guitar out of the case and which hole to blow into! (joke)
+        However for the 99% of us somewhere in the middle of these two extremes – the wheel will certainly enhance your knowledge.
+      </p>
+    </div>
+
+    <div id="shop" class="w3-container menu w3-padding-32 w3-white">
+      <p>
+        Visit the shop
+        <a href="#smart-button-container" class="w3-bar-item w3-button">here</a>
+        to purchase! You will get:
+      </p>
+
+      <ul>
+        <li>
+          <p>The Disc-Cover Music wheel. (aka the Volvelle) </p>
+          <p>Finished to a high standard and made and designed in the UK.
+          The device can be placed on a music stand, music shelf of a piano,
+          on your knee or desk etc. as you play along. </p>
+        </li>
+
+        <li>
+          <p> A 40 page user guide. </p>
+          <p> Written in an entertaining and understandable way, the guide
+          takes you through basic musical theory, how to use the Disc-Cover
+          Music device and ideas as to how it can help you in further study. </p>
+        </li>
+      </ul>
+
+      <p>
+        UK only at the moment
+      </p>
+
+      <p>
+        Price £20 plus £5 P&amp;P
+      </p>
+
+      <p>
+        I have spent a lot of time developing the concept and am confident you will learn a lot from it and use it for years to come.
+      </p>
+    </div><br>
+
+  </div>
+</div>
+
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="video">
+  <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">More Info</h1>
+  <div class="container">
+    <iframe src="//www.youtube.com/embed/SNFGvS10788" frameborder="0" allowfullscreen class="video"></iframe>
+  </div>
+  </p>
+</div>
+
+<!-- Shop -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Shop</h1>
+    <p class="w3-center">
+      <img src="wheel-with-booket.png" width="80%">
+    </p>
+    <p class="w3-center">
+      To get your own wheel and booklet click the appropriate link below and we will send yours out asap
+    </p>
+
+    <div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=GBP" data-sdk-integration-source="button-factory"></script>
+    <script>
+      function initPayPalButton() {
+        paypal.Buttons({
+          style: {
+            shape: 'rect',
+            color: 'blue',
+            layout: 'vertical',
+            label: 'buynow',
+          },
+          createOrder: function(data, actions) {
+            return actions.order.create({
+              purchase_units: [{"description":"Disc Cover Wheel and Booklet","amount":{"currency_code":"GBP","value":25,"breakdown":{"item_total":{"currency_code":"GBP","value":20},"shipping":{"currency_code":"GBP","value":5},"tax_total":{"currency_code":"GBP","value":0}}}}]
+            });
+          },
+          onApprove: function(data, actions) {
+            return actions.order.capture().then(
+              function(orderData) {
+                // Full available details
+                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                // Show a success message within this page, e.g.
+                const element = document.getElementById('paypal-button-container');
+                element.innerHTML = '';
+                element.innerHTML = '<h3>Thank you for your payment!</h3>';
+                // Or go to another URL:  actions.redirect('thank_you.html');
+              }
+            );
+          },
+          onError: function(err) {
+            console.log(err);
+          }
+        }).render('#paypal-button-container');
+      }
+      initPayPalButton();
+    </script>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Thank you, I hope you enjoyed disc-cover-music.com</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
