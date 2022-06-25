@@ -39,6 +39,47 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
     width: 100%;
     height: 100%;
 }
+.pricetag {
+	display: inline-block;
+  width: auto;
+	height: 38px;
+	background-color: yellow;
+	-webkit-border-radius: 3px 4px 4px 3px;
+	-moz-border-radius: 3px 4px 4px 3px;
+	border-radius: 3px 4px 4px 3px;
+	border-left: 1px solid yellow;
+	margin-left: 19px;
+	position: relative;
+	color: black;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 38px;
+	padding: 0 10px 0 10px;
+}
+
+.pricetag:before {
+	content: "";
+	position: absolute;
+	display: block;
+	left: -19px;
+	width: 0;
+	height: 0;
+	border-top: 19px solid transparent;
+	border-bottom: 19px solid transparent;
+	border-right: 19px solid yellow;
+}
+
+.pricetag:after {
+	content: "";
+	background-color: black;
+	border-radius: 50%;
+	width: 4px;
+	height: 4px;
+	display: block;
+	position: absolute;
+	left: -9px;
+	top: 17px;
+}
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 footer,header{display:block}
@@ -88,7 +129,7 @@ h1{font-weight:400;margin:10px 0}img{vertical-align:middle}a{color:inherit}
     <a href="#" class="w3-bar-item w3-button">HOME</a>
     <a href="#info" class="w3-bar-item w3-button">INFO</a>
     <a href="#video" class="w3-bar-item w3-button">VIDEO</a>
-    <a href="#smart-button-container" class="w3-bar-item w3-button">BUY!</a>
+    <a href="#shop" class="w3-bar-item w3-button">BUY!</a>
   </div>
 </div>
 
@@ -120,7 +161,7 @@ h1{font-weight:400;margin:10px 0}img{vertical-align:middle}a{color:inherit}
       <a href="javascript:void(0)" onclick="openMenu(event, 'background');">
         <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Why?</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'shop');">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'buy');">
         <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Buy!</div>
       </a>
     </div>
@@ -171,7 +212,7 @@ h1{font-weight:400;margin:10px 0}img{vertical-align:middle}a{color:inherit}
       </p>
     </div>
 
-    <div id="shop" class="w3-container menu w3-padding-32 w3-white">
+    <div id="buy" class="w3-container menu w3-padding-32 w3-white">
       <p>
         Visit the shop
         <a href="#smart-button-container" class="w3-bar-item w3-button">here</a>
@@ -219,11 +260,12 @@ h1{font-weight:400;margin:10px 0}img{vertical-align:middle}a{color:inherit}
 </div>
 
 <!-- Shop -->
-<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="shop">
   <div class="w3-content">
     <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Shop</h1>
     <p class="w3-center">
       <img src="wheel-with-booket.png" width="80%">
+      <span class="pricetag">only &pound;20 + P&amp;P</span>
     </p>
     <p class="w3-center">
       To get your own wheel and booklet click the appropriate link below and we will send yours out asap
