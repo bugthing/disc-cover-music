@@ -3,4 +3,4 @@
 serve:
 	python -m http.server
 publish:
-	scp {*.html,*.jpg,*.png} vps:/var/home/core/container-volumes/nginx/sites/disc-cover-music/
+	scp {*.html,*.jpg,*.png,*.svg} vps:/var/home/core/container-volumes/nginx/sites/disc-cover-music/
